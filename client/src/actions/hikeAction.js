@@ -91,7 +91,7 @@ export const removeComment = (hikeId, commentId) => async (dispatch) => {
     const res = await axios.delete(`/camp/delComment/${hikeId}/${commentId}`);
     dispatch({
       type: REMOVE_COMMENT,
-      payload: commentId,
+      payload: {hikeId, commentId}
     });
   } catch (error) {
     console.error(error.message);
