@@ -47,7 +47,9 @@ const hikeReducer = (state = initialState, action) => {
       return {
         ...state,
         hikes: state.hikes.map((hike) =>
-          hike._id === payload.hikeId ? { ...hike, comments: payload.comments } : hike
+          hike._id === payload.hikeId
+            ? { ...hike, comments: payload.comments }
+            : hike
         ),
         loading: false,
         commented: true,
@@ -58,22 +60,14 @@ const hikeReducer = (state = initialState, action) => {
         commented: false,
         loading: false,
       };
-    case REMOVE_COMMENT:
-      return {
-        ...state,
-
-        hikes: state.hikes.map((hike) =>
-          hike._id === payload.hikeId
-            ? hike.comments.filter((comment) => comment._id !== payload.commentId)
-            : hike
-        ),
-
-        loading: false,
-      };
     case GET_COMMENT:
       return {
         ...state,
-        comments: { ...state.hikes.comments, comments: payload },
+        hikes: state.hikes.map((hike) =>
+          hike._id === payload.hikeId
+            ? { ...hike, comments: payload.comments }
+            : hike
+        ),
       };
     case ADD_BOOKING:
       return {
