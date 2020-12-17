@@ -1,0 +1,92 @@
+.hikes-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.hikeCard {
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 5px 5px rgba(167, 165, 165, 0.418);
+}
+.cardImg {
+  height: 180px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.svg-icon {
+  width: 30px;
+  fill: red;
+}
+.card-button {
+  width: 100px;
+  background-color: #33c2a3;
+  border: none;
+  padding: 10px;
+}
+.card-button:hover {
+  background-color: rgb(170, 165, 165);
+  cursor: pointer;
+}
+.more-info {
+  padding: 50px 100px 50px 100px;
+  border-radius: 20px;
+}
+.booking-pic {
+  height: 500px;
+}
+.reservation {
+  display: flex;
+  margin: 200px;
+  justify-content: space-around;
+}
+.info-button {
+  color: white;
+  padding: 10px;
+  width: 300px;
+  margin-top: 20px;
+  background-color: #33c2a3;
+  border: none;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.info-button:hover {
+  background-color: rgb(170, 165, 165);
+  cursor: pointer;
+}
+.comment-area {
+  text-align: center;
+}
+.text-area-comment {
+  width: 800px;
+}
+.comment-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  margin-left: 100px;
+}
+.content {
+  background-color: white;
+  border-radius: 10px;
+  width: 1100px;
+  padding: 20px;
+}
+.options {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: gray;
+}
+.booking-form {
+  display: block;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  margin: 200px;
+  padding: 50px;
+}
+.back {
+  display: block;
+  text-align: center;
+}

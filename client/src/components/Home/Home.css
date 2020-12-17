@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 180px 180px 180px 180px 180px;
+  grid-template-rows: 500px 200px 200px 200px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "main main main main main main "
+    ". . a2 a2 . ."
+    "a1 a1 a2 a2 a3 a3"
+    "a1 a1 . . a3 a3";
+}
+.a1 {
+  grid-area: a1;
+  border-radius: 30px;
+}
+.a2 {
+  grid-area: a2;
+}
+.a3 {
+  grid-area: a3;
+}
+
+.main {
+  grid-area: main;
+  width: 1349px;
+}
+
+.pic {
+  width: 400px;
+  height: 350px;
+  margin: 80px;
+  border-style: groove;
+  border-radius: 5px;
+}
+.home-desc {
+  width: 500px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  margin-left: 70px;
+  margin-top: -230px;
+}
+
+.main-pic {
+  width: 1350px;
+  height: 400px;
+  margin-top: -15px;
+}
+.title {
+  font-family: "Satisfy", cursive;
+  font-size: 50px;
+}
+.head {
+  width: 700px;
+}
+
+.body-desc {
+  text-align: justify;
+  width: 580px;
+}

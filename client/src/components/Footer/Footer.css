@@ -1,0 +1,28 @@
+.container-footer {
+  margin-top: 150px;
+  text-align: justify;
+  padding: 20px;
+  font-size: larger;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(95, 175, 175, 0.459);
+}
+.title-footer {
+  font-family: "Satisfy", cursive;
+  font-size: 30px;
+}
+.About {
+  width: 600px;
+}
+.copyright {
+  padding: 10px;
+  text-align: center;
+  border-top: solid rgb(165, 163, 163);
+  background-color: rgba(95, 175, 175, 0.459);
+}
+.footer-desc {
+  font-size: 15px;
+}
+.contact {
+  text-align: center;
+}

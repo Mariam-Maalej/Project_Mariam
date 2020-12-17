@@ -1,0 +1,49 @@
+.more-info-guide {
+  padding: 50px 100px 50px 100px;
+  border-radius: 20px;
+}
+
+.hikes-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.add-icon {
+  width: 100px;
+}
+.modal-add {
+  width: 200px;
+  text-align: center;
+}
+.Add {
+  background-color: rgba(200, 243, 229, 0.616);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+#add {
+  width: 100px;
+}
+.area1 {
+  margin-top: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-booking {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.card {
+  margin: 20px;
+}
+.reserved-container {
+  margin: 80px;
+}
+.check-area {
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+.App {
+  text-align: center;
+  margin: 0;
+}
+body {
+  background-color: rgba(240, 232, 232, 0.493);
+  font-family: 'Lora', serif;
+}

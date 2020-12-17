@@ -1,0 +1,29 @@
+.search {
+ text-align: center;
+ padding-bottom : 50px;
+ padding-top : 50px;
+  color: rgb(58, 70, 68);
+  font-size: 17px;
+}
+.search-input {
+width : 300px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 8px 5px 5px rgba(190, 192, 191, 0.555);
+}
+.search-input:focus {
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background: white;
+}
+
+.search-icon {
+  padding-left: 8px;
+}
+.search-icon :hover {
+  color: #33c2a3;
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+.discover-head {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(173, 196, 219, 0.329);
+}
+.head-description {
+  margin: 60px;
+  text-align: justify;
+  line-height: 40px;
+}
+.city-pic {
+  width: 400px;
+  box-shadow: 10px 5px 5px gray;
+}
+.city-content {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.city-description {
+  width: 400px;
+  margin: 50px;
+  margin-left: -30px;
+  box-shadow: 10px 5px 5px rgba(128, 128, 128, 0.466);
+  background-color: rgba(240, 210, 199, 0.555);
+  padding: 20px;
+  border-radius: 10px;
+
+  text-align: justify;
+}
+.activities-container {
+  background-color: rgba(214, 47, 47, 0.294);
+}
+.activities {
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(173, 196, 219, 0.329);
+}
+.activity-desc {
+  margin: 60px;
+  text-align: justify;
+  line-height: 40px;
+}
+.ph-act {
+  width: 250px;
+  height: 200px;
+  padding: 10px;
+}
+.photos-activities {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}

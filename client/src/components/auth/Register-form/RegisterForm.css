@@ -1,0 +1,29 @@
+.register-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin : 50px
+}
+.form-item {
+  border-radius: 5px;
+}
+.register-user{
+  width: 600px;
+  position : relative
+}
+.register-button {
+  position: absolute;
+  padding: 10px;
+  width: 300px;
+  left: 50%;
+  margin-top: 30px;
+  background-color: #33c2a3;
+  border: none;
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.register-button:hover {
+  background-color: rgb(170, 165, 165);
+  cursor: pointer;
+}

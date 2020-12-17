@@ -1,0 +1,30 @@
+.links {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(173, 196, 219, 0.329);
+}
+.links-desc {
+  margin: 60px;
+  text-align: justify;
+  line-height: 40px;
+}
+.img-links {
+  width: 400px;
+  height: 400px;
+}
+.pic-tools {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-around;
+}
+.tools .ul {
+  list-style-type: none;
+}
+.a {
+  list-style-type: none;
+}
