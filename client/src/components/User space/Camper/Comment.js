@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { addComment } from "../../../actions/hikeAction";
 import { Button } from "react-bootstrap";
 import "./camper.css";
-import { ITEM_RESET } from "../../../actions/actionsType";
 
 const Comment = ({ hikeId }) => {
   const dispatch = useDispatch();
