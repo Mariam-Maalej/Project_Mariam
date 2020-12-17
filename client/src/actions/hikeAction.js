@@ -89,10 +89,7 @@ export const addComment = (hikeId, { text }) => async (dispatch) => {
 export const removeComment = (hikeId, commentId) => async (dispatch) => {
   try {
     const res = await axios.delete(`/camp/delComment/${hikeId}/${commentId}`);
-    dispatch({
-      type: REMOVE_COMMENT,
-      payload: {hikeId, commentId}
-    });
+    dispatch(getComment(hikeId));
   } catch (error) {
     console.error(error.message);
     dispatch({ type: COMMENT_ERROR });
@@ -102,7 +99,7 @@ export const removeComment = (hikeId, commentId) => async (dispatch) => {
 export const getComment = (hikeId) => async (dispatch) => {
   try {
     const res = await axios.get(`/camp/allComments/${hikeId}`);
-    dispatch({ type: GET_COMMENT, payload: res.data });
+    dispatch({ type: GET_COMMENT, payload: { hikeId, comments: res.data } });
   } catch (error) {
     console.log(error);
     dispatch({ type: COMMENT_ERROR });
