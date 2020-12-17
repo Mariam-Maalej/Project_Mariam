@@ -39,7 +39,7 @@ const hikeReducer = (state = initialState, action) => {
       return {
         ...state,
         hikes: state.hikes.map((hike) =>
-          hike._id === payload.id ? { ...hike, likes: payload.likes } : hike
+          hike._id === payload.hikeId ? { ...hike, likes: payload.likes } : hike
         ),
         loading: false,
       };
@@ -47,7 +47,7 @@ const hikeReducer = (state = initialState, action) => {
       return {
         ...state,
         hikes: state.hikes.map((hike) =>
-          hike._id === payload ? { ...hike, comments: payload.comments } : hike
+          hike._id === payload.hikeId ? { ...hike, comments: payload.comments } : hike
         ),
         loading: false,
         commented: true,
@@ -63,8 +63,8 @@ const hikeReducer = (state = initialState, action) => {
         ...state,
 
         hikes: state.hikes.map((hike) =>
-          hike._id === payload
-            ? hike.comments.filter((comment) => comment._id !== payload)
+          hike._id === payload.hikeId
+            ? hike.comments.filter((comment) => comment._id !== payload.commentId)
             : hike
         ),
 
